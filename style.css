@@ -236,6 +236,75 @@ button:hover {
 }
 
 
+/*Shop List*/
+
+
+.cart.soldout{
+    color:rgba(237, 240, 241, 0.2);
+    background-color:rgba(0,136,169,0.2);
+}
+
+/*Override the button hover from original class.*/
+.cart.soldout:hover{
+    color:rgba(237, 240, 241, 0.2);
+    background-color:rgba(0,136,169,0.2);
+}
+
+.products {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #24252A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 90px;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.items .box {
+    flex: 1;
+    margin: 20px 20px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+}
+
+.items .box img {
+    width: 100%;
+    height: auto;
+
+}
+
+.items .box h3 {
+    margin: 15px 0;
+    font-size: 28px;
+    color: #EE964B;
+}
+
+.items .box .price {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    color: #edf0f1;
+
+}
+
+.items .box button {
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
 footer {
     clear:both;
     padding-top: 200px;
