@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Aaron's Robotics | Sign Up</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo"><img  src="images/logo.png" alt="logo" width="300"></a>
+            <nav>
+                <ul class="contents">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                </ul>
+            </nav>
+            <a class="shop" href="sign_up.html"><button>Login/Sign Up</button></a>
+        </header>
+
+        <h2 class="pageTitle">Register an Account</h2>
+            <form class="form" id="form" method="POST">
+                <div class="fieldBox">
+                    <label><h2>Username: <br></h2></label>
+                    <input type="text" name="usernamefield" id="usernamefield">
+                    <small>Error Message</small>
+                </div>
+
+                <div class="fieldBox">
+                    <label><h2>Email: <br></h2></label>
+                    <input type="email" name="emailfield" id="emailfield" >
+                    <small>Error Message</small>
+                </div>
+
+                <div class="fieldBox">
+                    <label><h2>Password: <br></h2></label>
+                    <input type="password" name="passfield" id="passfield">
+                    <small>Error Message</small>
+                </div>
+
+                <div class="fieldBox">
+                    <label><h2>Confirm Password: <br></h2></label>
+                    <input type="password" name="passfield2" id="passfield2" >
+                    <small>Error Message</small>
+                </div>
+
+
+                <div class="fieldBox">
+                    <label><h2>Phone Number: <br></h2></label>
+                    <input type="tel" name="telfield" id="telfield" >
+                    <small>Error Message</small>
+                </div>
+
+
+                <div class="fieldBox">
+                    <h2>Country: <br></h2>
+                    <select id="country" name="country">
+                        <option value="MY">Malaysia</option>
+                        <option value="BN">Brunei</option>
+                        <option value="CB">Cambodia</option>
+                        <option value="ET">East Timor</option>
+                        <option value="ID">Indonesia</option>
+                        <option value="JP">Japan</option>
+                        <option value="LA">Laos</option>
+                        <option value="PH">Philippines</option>
+                        <option value="SG">Singapore</option>
+                        <option value="SK">South Korea</option>
+                        <option value="TH">Thailand</option>
+                        <option value="VT">Vietnam</option>
+                        <option disabled>Others (not available)</option>
+                    </select><br>
+                </div>
+
+                <div class="signupButtons">
+                    <button>Sign Up</button>
+                </div>
+                <p class="centerTxt">Have an account? <a href="login.html">Click Here to Login.</a></p>
+            </form>
+        
+
+    </body>
+    <footer>
+        Copyright &copy; 2023 Aaron Lee Zhe Tse. All Rights Reserved.
+    </footer>
+    <script async src="script.js"></script>
+</html>

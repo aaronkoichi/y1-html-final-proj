@@ -1,0 +1,248 @@
+
+
+/*   Import Google Fonts  */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Mono&display=swap'); */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+
+li, a, button {
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+.form {
+    padding: 30px 40px;
+}
+
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    position: sticky;
+    z-index: 99999; /*Let navigation bar stick*/
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo {
+    cursor: pointer;  
+    margin-right: auto;
+}
+
+.contents {
+    list-style: none;
+}
+
+.contents li {
+    display: inline-block; /*Make it side by side*/
+    padding: 0 20px;
+}
+
+.contents li a {
+    transition: all 0.3s ease 0s;
+}
+
+.contents li a:hover {
+    color: #0088a9;
+}
+
+
+button {
+    padding: 9px 25px;
+    margin-left: 20px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+button:hover {
+    background-color: rgba(0,136,169,0.8);;
+}
+
+.signupButtons button {
+    background-color: rgba(213, 87, 59, 1);
+}
+.signupButtons button:hover {
+    background-color: rgba(213, 87, 59, 0.8);
+}
+
+
+.pageTitle {
+    width: 70%;
+    padding-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    font-family: 'Roboto Mono', sans-serif;
+    color: #EE964B;
+    font-size: 30px;
+    text-align: left;
+
+}
+
+.container {
+    width: 400px;
+    max-width: 100%;
+}
+
+
+.fieldBox {
+    display: flex;
+    align-items: center;
+    position:relative;
+    justify-content: center;
+    padding: 30px 10%;
+    size: 26px;
+    margin:0;
+}
+
+.fieldBox h2 {
+    width: 100px;
+    padding-top: 0;
+    padding-right: 10em;
+    margin-left: 0;
+    margin-right: 0;
+    clear: both;
+    font-family: 'Roboto Mono', sans-serif;
+    color:#CAFE48;
+    font-size: 26px;
+
+}
+
+.fieldBox.error h2 {
+    color: #CE4257;
+}
+
+
+.fieldBox input, select {
+    color:#edf0f1;
+    width: 40%;
+    font-size: 26px;
+    font-family: 'Roboto Mono', sans-serif;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #EE964B;
+}
+
+.fieldBox.success input {
+    border-color:#B9E28C;
+}
+
+.fieldBox.error input {
+    border-color: #CE4257;
+}
+
+.fieldBox small {
+    position: absolute;
+    text-align:center;
+    clear: both;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    padding-left: auto;
+    padding-right: auto;
+    color: #edf0f1;
+    visibility: hidden;
+
+}
+
+
+
+.fieldBox.error small {
+    color: #CE4257;
+    visibility:visible;
+}
+
+
+
+
+
+.threeImg {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+
+.boxImage {
+    width: 350px;
+}
+
+#box1 {
+    width: 400px;
+}
+
+
+.centerImg {
+    clear: both;
+    width: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+
+.centerTxt {
+    text-align: center;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 16px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em 0 10em 0;
+    color: #edf0f1;
+
+}
+
+.centerTxt a{
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.centerTxt a:hover {
+    color:#0088a9;
+}
+
+
+
+
+.signupButtons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 3em;
+
+}
+
+
+footer {
+    clear:both;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #FFF;
+    font-size: 10px;
+    
+}
