@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stretch by Boston Dynamics | Aaron's Robotics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img  src="images/logo.png" alt="logo" width="300"></a>
+        <nav>
+            <ul class="contents">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+        </nav>
+        <a class="shop" href="sign_up.html"><button>Login/Sign Up</button></a>
+    </header>
+    <h2 class="pageTitle">Stretch by Boston Dynamics</h2>
+
+<!--    Horizontal image gallery   -->
+    <div class="Slideshow">
+        <img src="images/Stretch/p1.jpg" alt="Stretch picture 1" height="500px">
+        <img src="images/Stretch/p2.jpg" alt="Stretch picture 1" height="500px">
+        <img src="images/Stretch/p3.jpg" alt="Stretch picture 1" height="500px">
+        <img src="images/Stretch/p4.jpg" alt="Stretch picture 1" height="500px">
+        <img src="images/Stretch/p5.jpg" alt="Stretch picture 1" height="500px">
+        <img src="images/Stretch/p6.jpg" alt="Stretch picture 1" height="500px">
+    </div>
+    <p class="centerTxt"><strong>Automate your Warehouse with Stretch</strong><br><br>
+        Deploy our mobile, versatile Stretch platform in your warehouse to efficiently unload cases.<br><br>
+    <strong>Elevate case handling</strong><br><br>
+        Stretch offers predictability for warehouse operations, working continuously
+        and keeping the flow of goods moving. With the ability to move hundreds of cases an hour,
+        Stretch ensures that daily goals are met even as order fulfillment demands soar.<br><br>
+    <strong>Mobility and manipulation for unloading</strong><br><br>
+        Mobile case handling with Stretch is unlocking new opportunities to automate dull,
+        dirty, and dangerous warehousing tasks, freeing your team up to do more.<br><br>
+    <strong>Automation without infrastructure</strong><br><br>
+        Bring your warehouse into the future without upending your entire business.
+        Stretch is specifically designed to handle cases with efficiency and speed. With a straightforward
+        installation and setup process, our robot can easily supplement your labor resources
+        to keep the flow of goods moving.</p>
+
+    <h2 class="pageTitle">Request a Quotation</h2>
+    <form class="form" id="form" method="POST">
+<!--    <p class="centerTxt">Fill in your company details below, and our team will get in touch with you soon.</p>-->
+
+        <div class="fieldBox">
+            <h2>Company Email: <br></h2>
+            <input type="text" name="emailfield" id="emailfield" ><br>
+            <small>Error Message</small>
+        </div>
+        <div class="fieldBox">
+            <h2>Address Line 1: <br></h2>
+            <input type="text" name="addressline1" id="addressline1" ><br>
+            <small>Error Message</small>
+        </div>
+        <div class="fieldBox">
+            <h2>Address Line 2: <br></h2>
+            <input type="text" name="addressline2" id="addressline2" ><br>
+        </div>
+        <div class="fieldBox">
+            <h2>Postcode: <br></h2>
+            <input type="text" name="postcode" id="postcode" ><br>
+            <small>Error Message</small>
+        </div>
+        <div class="fieldBox">
+            <h2>Country: <br></h2>
+            <select id="country" name="country">
+                <option value="MY">Malaysia</option>
+                <option value="BN">Brunei</option>
+                <option value="CB">Cambodia</option>
+                <option value="ET">East Timor</option>
+                <option value="ID">Indonesia</option>
+                <option value="JP">Japan</option>
+                <option value="LA">Laos</option>
+                <option value="PH">Philippines</option>
+                <option value="SG">Singapore</option>
+                <option value="SK">South Korea</option>
+                <option value="TH">Thailand</option>
+                <option value="VT">Vietnam</option>
+                <option disabled>Others (not available)</option>
+            </select><br>
+        </div>
+        <div class="fieldBox">
+            <h2>Message: <br></h2>
+            <textarea name="messagefield" id="messagefield" rows="5" cols="70"></textarea><br>
+
+        </div>
+
+
+
+        <div class="signupButtons">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+<footer>
+    Copyright &copy; 2023 Aaron Lee Zhe Tse. All Rights Reserved.
+</footer>
+<script async src="quotation_script.js"></script>
+</html>
