@@ -153,8 +153,8 @@ button:hover {
     width: 100%;
     bottom: 0;
     right: 0;
-    padding-left: auto;
-    padding-right: auto;
+    /*padding-left: auto;*/
+    /*padding-right: auto;*/
     color: #edf0f1;
     visibility: hidden;
 
