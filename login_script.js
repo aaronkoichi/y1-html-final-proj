@@ -7,6 +7,14 @@ const passfield = document.getElementById('passfield');
 let userCheck;
 let passCheck;
 
+// Date
+let today = new Date();
+// For creating the date.
+let monthNames = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+];
+let date = today.getDate() + ' ' + monthNames[today.getMonth()] + ' ' + today.getFullYear();
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     checkInputs();
@@ -17,9 +25,21 @@ form.addEventListener('submit', (e) => {
         // redirects the webpage to shop page.
         window.location.href = "shop.html";
 
+         // Store the updated footer value in local storage
+        const updatedFooter = 'Last data collection: ' + date;
+        localStorage.setItem('footer_login', updatedFooter);
     }
 
 })
+
+// Retrieve the footer value from local storage on page load
+window.addEventListener('load', () => {
+    const footer = document.querySelector('.dateUpdate_login');
+    const storedFooter = localStorage.getItem('footer_login');
+    if (storedFooter) {
+        footer.innerText = storedFooter;
+    }
+});
 
 
 function checkInputs() {

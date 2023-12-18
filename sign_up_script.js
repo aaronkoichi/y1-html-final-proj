@@ -10,11 +10,14 @@ let passCheck;
 let passCheck2;
 let telcheck;
 
+// Date
+let today = new Date();
 // For creating the date.
 let monthNames = ["January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
 ];
 let date = today.getDate() + ' ' + monthNames[today.getMonth()] + ' ' + today.getFullYear();
+
 
 
 form.addEventListener('submit', (e) => {
@@ -29,15 +32,15 @@ form.addEventListener('submit', (e) => {
 
         // Store the updated footer value in local storage
         const updatedFooter = 'Last data collection: ' + date;
-        localStorage.setItem('footer', updatedFooter);
+        localStorage.setItem('footer_signup', updatedFooter);
     }
 
 });
 
 // Retrieve the footer value from local storage on page load
 window.addEventListener('load', () => {
-    const footer = document.querySelector('.dateUpdate');
-    const storedFooter = localStorage.getItem('footer');
+    const footer = document.querySelector('.dateUpdate_signup');
+    const storedFooter = localStorage.getItem('footer_signup');
     if (storedFooter) {
         footer.innerText = storedFooter;
     }

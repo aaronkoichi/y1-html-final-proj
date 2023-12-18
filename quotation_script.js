@@ -25,14 +25,14 @@ form.addEventListener('submit', (e) => {
         
         // Store the updated footer value in local storage
         const updatedFooter = 'Last data collection: ' + date;
-        localStorage.setItem('footer', updatedFooter);
+        localStorage.setItem('footer_stretch', updatedFooter);
     }
 })
 
 // Retrieve the footer value from local storage on page load
 window.addEventListener('load', () => {
-    const footer = document.querySelector('.dateUpdate');
-    const storedFooter = localStorage.getItem('footer');
+    const footer = document.querySelector('.dateUpdate_stretch');
+    const storedFooter = localStorage.getItem('footer_stretch');
     if (storedFooter) {
         footer.innerText = storedFooter;
     }
