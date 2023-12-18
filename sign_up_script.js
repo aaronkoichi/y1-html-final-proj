@@ -10,12 +10,16 @@ let passCheck;
 let passCheck2;
 let telcheck;
 
+// For creating the date.
+let monthNames = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+];
+let date = today.getDate() + ' ' + monthNames[today.getMonth()] + ' ' + today.getFullYear();
+
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     checkInputs();
-
-
     // If the inputs are check correctly:
     if (userCheck === true && passCheck === true && passCheck2 === true && telcheck === true) {
         // Gives a pop-up to notify user.
@@ -23,9 +27,21 @@ form.addEventListener('submit', (e) => {
         // redirects the webpage to login page.
         window.location.href = "login.html";
 
+        // Store the updated footer value in local storage
+        const updatedFooter = 'Last data collection: ' + date;
+        localStorage.setItem('footer', updatedFooter);
     }
 
-})
+});
+
+// Retrieve the footer value from local storage on page load
+window.addEventListener('load', () => {
+    const footer = document.querySelector('.dateUpdate');
+    const storedFooter = localStorage.getItem('footer');
+    if (storedFooter) {
+        footer.innerText = storedFooter;
+    }
+});
 
 function checkInputs() {
     // get the values from the inputs
@@ -69,7 +85,7 @@ function checkInputs() {
     // password
     if (passValue2 === '') {
         passCheck2 = setErrorMsg(passfield2, 'Password cannot be blank!');
-    }else if (passValue !== passValue2){
+    } else if (passValue !== passValue2) {
         setErrorMsg(passfield2, 'Password do not match!');
     } else {
         passCheck2 = setSuccessMsg(passfield2);
@@ -79,7 +95,7 @@ function checkInputs() {
     if (telValue === '') {
         telcheck = setErrorMsg(telfield, 'Phone number cannot be blank!');
 
-    } else if(telValue.length < 10) {
+    } else if (telValue.length < 10) {
         telcheck = setErrorMsg(telfield, 'Phone number is not valid!');
     } else {
         telcheck = setSuccessMsg(telfield);
